@@ -41,6 +41,18 @@ export default defineConfig(({ mode }) => {
       },
     };
   }
+  if (mode === 'examples') {
+    // GitHub Pages 向け examples プロダクションビルド
+    return {
+      plugins: [react()],
+      root: resolve(__dirname, 'examples'),
+      base: '/egov-lawid-input/',
+      build: {
+        outDir: resolve(__dirname, 'dist-examples'),
+        emptyOutDir: true,
+      },
+    };
+  }
   // dev サーバー: examples/ をルートにする
   return {
     plugins: [react()],
