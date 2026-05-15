@@ -2,7 +2,9 @@
 
 e-Gov 法令検索 API（`https://laws.e-gov.go.jp/api/2`）で法令名検索を行い、選択した法令の `lawId` を取得する再利用可能な React コンポーネント。
 
-`https://lawdiff.und-m.jp/` で利用している `LawIdInput` を独立ライブラリとして切り出したもの。
+[https://lawdiff.und-m.jp/](https://lawdiff.und-m.jp/) で利用している `LawIdInput` を独立ライブラリとして切り出したもの。
+
+デモサンプルは[こちら](https://bpm105.github.io/egov-lawid-input/)。
 
 ## インストール
 
